@@ -7,46 +7,60 @@
         
             @include media (1440px) {
                 padding-top: 188px;
-                padding-left: 149px;
+                
             }
          
                          
          }
-.order-br {
-    
-    
-    background-image: url(/src/images/cub-mob-1x.jpg);
-        background-repeat: no-repeat;
-        background-size: 280px 171px;
-    
-        @include retina {
-            background-image: url(/src/images/cub-mob-2x.jpg);
-        }
-    
-        @media screen and (min-width:768px) and (max-width:1439px) {
-            background-image: url(/src/images/cub-tab-1x.jpg);
-            background-repeat: no-repeat;
-            background-size: 336px 158px;
-        }
-    
-        @include retina {
-            background-image: url(/src/images/cub-tab-2x.jpg);
-            background-repeat: no-repeat;
-        }
-    
-    
-        @media screen and (min-width:1440px) {
-            background-image: url(/src/images/cub-desk-2x.jpg);
-            background-repeat: no-repeat;
-            background-size: 555px 400px;
-        }
-    
-        @include retina {
-            background-image: url(/src/images/cub-desk-2x.jpg);
-            background-repeat: no-repeat;
-        }
-}
 
+//  .order-form:not(:first-child) {
+//      margin-top: 44px;
+//  }
+.order-form {
+    padding-top: 20px;
+   @include media (1440px) {
+                      width: 555px;
+                    }
+
+}
+// .order-br {    
+//     background-image: url(/src/images/cub-mob-1x.jpg);
+//         background-repeat: no-repeat;
+//         background-size: 280px 171px;
+    
+//         @include retina {
+//             background-image: url(/src/images/cub-mob-2x.jpg);
+//         }
+    
+//         @media screen and (min-width:768px) and (max-width:1439px) {
+//             background-image: url(/src/images/cub-tab-1x.jpg);
+//             background-repeat: no-repeat;
+//             background-size: 336px 158px;
+//         }
+    
+//         @include retina {
+//             background-image: url(/src/images/cub-tab-2x.jpg);
+//             background-repeat: no-repeat;
+//         }
+    
+    
+//         @media screen and (min-width:1440px) {
+//             background-image: url(/src/images/cub-desk-2x.jpg);
+//             background-repeat: no-repeat;
+//             background-size: 555px 400px;
+//         }
+    
+//         @include retina {
+//             background-image: url(/src/images/cub-desk-2x.jpg);
+//             background-repeat: no-repeat;
+//         }
+// }
+.position-btn {
+    padding-top: 80px;
+    width: 100%;
+    margin-left: 0px;
+
+}
        
 .order-img {
     padding: 0 20px;
@@ -54,7 +68,6 @@
 }
 
 .order-text {
-    
     font-weight: 300;
     font-size: 16px;
     line-height: calc(20px / 16px);
@@ -62,42 +75,63 @@
     width: 100%;
     text-align: left;
     margin-top: 16px;
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 511px;
+        font-size: 18px;
+    }
 }
 .order-list {
 @media screen and (min-width: 768px) {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         align-content: center;
         // gap: 32px;
     }
 }
+
+
+
 .order-item {
     @media screen and (min-width: 768px){
-    width: 336px;
+    width: 555px;
+    // height: 400px;
+    gap: 32px;
 }
 }
 
 
 
 .title-center {
-    text-align: center;
+    @media screen and (min-width: 768px) and (max-width: 1439px){
+            text-align: center;
+        }
+    
 }
-.forms {
-    margin-top: 41px;
+.forms-send {
+    // margin-top: 41px;
     width: 100%;
-    // display: flex;
+   
         margin-left: auto;
         margin-right: auto;
     @media screen and (min-width: 480px) {
-            // max-width: 400px;
+           max-width: 400px;
             align-content: center;
         }
-    // @media screen and (min-width: 1440px) {
-    //         width: 555px;
-    //         margin-left: 0;
-    //     }
+                   @media screen and (min-width: 1440px) {
+        
+                       max-width: 555px;
+                   }
 
 }
+// .order-bg {
+//     width: 80%;
+// }
 .order-form-choice {
     width: 100%;
     height: 24px;
@@ -183,21 +217,33 @@
     font-size: 16px;
     line-height: 1.25;
     color: #CDCDCD;
-    // width: 280px;
     width: 100%;
-    height: 80px;
     text-align: left;
-}
 
-.btn-send {
-    margin-right: 20px;
-    margin-top: 35px;
-    width: 280px;
-    margin-bottom: 60px;
+}
+.forms-pic-cont {
+    padding-top: 40px;
+    @media screen and (min-width: 1440px) {
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+        }
+}
+.btn-send {
+    // padding-right: 20px;
+    // margin-top: 40px;
+    width: 280px;
+    // margin-bottom: 60px;
+    // margin-left: auto;
+    // margin-right: auto;
     display: block;
-    align-items: center;
+    // align-items: center;
+    
+    align-content: center;
+    justify-content: right;
+    justify-items: right;
 }
 
 .form-svg-add {
@@ -226,8 +272,10 @@
     }
 }
 .order-imglist {
+    width: 100%;
     @media screen and (max-width:1439px) {
         display: none;
+        
     }
 
     display: flex;
