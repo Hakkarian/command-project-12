@@ -1,6 +1,6 @@
-<section class="forms">
-    <div class="container">
-        <h3 class="title-section">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+<section class="forms-send">
+    <div class="container-form">
+        <p class="title-section title-center">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
         <form class="order-form">
             <div class="order-form__field">
                 <label>
@@ -15,10 +15,13 @@
             <div class="order-form__field">
                 <label>
                     <select name="view" id="view" class="order-form-choice">
-                        <option value="">Види пластика</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
+                        <option class="triangle" value="">Види пластика</option>
+                        <option value="">PLA (ПЛА) або полілактид</option>
+                        <option value="">ABS (АБС) або акрилонітрилбутадієнстирол</option>
+                        <option value="">PVA (ПВА) або полівініловий спирт</option>
+                        <option value="">Nylone (Нейлон)</option>
+                        <option value="">HIPS (Удароміцний полістирол)</option>
+                        <option value="">Труднощі у виборі - ми допоможемо</option>
                     </select>
                 </label>
             </div>
@@ -26,9 +29,10 @@
                 <label>
                     <select name="quality" id="quality" class="order-form-choice">
                         <option value="">Якість друку</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
+                        <option value="">300 мікрон</option>
+                        <option value="">200 мікрон</option>
+                        <option value="">100 мікрон</option>
+                        <option value="">Труднощі у виборі - ми допоможемо</option>
                     </select>
                 </label>
             </div>
@@ -36,22 +40,28 @@
                 <label>
                     <select name="color" id="color" class="order-form-choice">
                         <option value="">Колір</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
+                        <option value="">Чорний</option>
+                        <option value="">Білий</option>
+                        <option value="">Червоний</option>
+                        <option value="">Жовтий</option>
+                        <option value="">Синій</option>
                     </select>
+
                 </label>
             </div>
             <div class="order-form__field">
                 <label class="order-form__comment-title">
                     Повідомлення</label>
 
-                <div class="form-svg-add">
 
-                    <svg class="svg-add" width="22" height="20">
-                        <use href="/src/images/icons.svg#icon-paper-clip"></use>
-                    </svg>
-                </div>
+                <a href="/src/doc/present.pdf" download>
+                    <div class="form-svg-add">
+                        <svg class="svg-add" width="22" height="20">
+                            <use href="/src/images/icons.svg#icon-paper-clip"></use>
+                        </svg>
+                    </div>
+                </a>
+
 
                 <textarea class="order-form__comment" id="comment" placeholder="Залишіть своє повідомлення"></textarea>
 
@@ -60,6 +70,8 @@
         <p class="order-form-note">
             *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
         </p>
+        <div class="position-btn">
         <button type="button" class="btn-send btn">ВІДПРАВИТИ</button>
+        </div>
     </div>
 </section>
